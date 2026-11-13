@@ -1,0 +1,47 @@
+corpus 539,185 chars | vocab 96 | train 431,340 | cal 53,910 | test 53,911
+training fp32 model ...
+  step     1  loss 4.799
+  step  1000  loss 1.807
+  step  2000  loss 1.647
+  step  3000  loss 1.410
+  step  4000  loss 1.483
+  step  5000  loss 1.238
+  step  6000  loss 1.244
+
+next-char acc  fp32 0.5451 | int8 (high) 0.5457 | top-4-bit (low) 0.5227
+argmax flips (low != high) on test: 0.1996 of 53,911 steps
+
+[offline replay] flip-prediction AUC
+  entropy  AUC = 0.800
+  margin   AUC = 0.866
+
+[gated policies on test, thresholds calibrated on held-out cal split]
+  policy      budget  esc.rate  flips caught  acc     mean KL(hi||pol)  bytes(nibble)  bytes(rerun)
+  all-low      0.00     0.000         0.000   0.5227          0.10844         0.500        0.500
+  entropy      0.05     0.055         0.140   0.5244          0.09931         0.528        0.555
+  margin       0.05     0.053         0.165   0.5268          0.09973         0.527        0.553
+  random       0.05     0.050         0.050   0.5239          0.10290         0.525        0.550
+  entropy      0.10     0.111         0.270   0.5256          0.09010         0.556        0.611
+  margin       0.10     0.105         0.316   0.5288          0.09142         0.553        0.605
+  random       0.10     0.102         0.098   0.5253          0.09757         0.551        0.602
+  entropy      0.15     0.163         0.377   0.5276          0.08187         0.582        0.663
+  margin       0.15     0.157         0.449   0.5320          0.08373         0.578        0.657
+  random       0.15     0.149         0.152   0.5265          0.09210         0.575        0.649
+  entropy      0.25     0.263         0.568   0.5312          0.06578         0.632        0.763
+  margin       0.25     0.261         0.667   0.5371          0.06796         0.631        0.761
+  random       0.25     0.250         0.254   0.5291          0.08121         0.625        0.750
+  all-high     1.00     1.000         1.000   0.5457          0.00000         1.000        1.500
+
+[free-running greedy generation: 60 prompts x 80 tokens, budget 0.15]
+  policy     esc.rate  token-agree w/ high  mean prefix-match  exact-match seqs
+  all-low      0.000                0.193                9.4        4/60
+  entropy      0.119                0.254               14.1        4/60
+  margin       0.142                0.287               18.6        4/60
+  random       0.148                0.220               10.8        4/60
+
+sample prompt: 'iles.\n\nR'
+  high   : 'eturn a list of all the string containing a new string containing a new string c'
+  low    : 'eturn a list of all the specified with the corresponding to the optional keyword'
+  entropy: 'eturn a list of all the specified to the server object.\n\nThe function to the ser'
+
+done in 22s
