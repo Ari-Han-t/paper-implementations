@@ -1,0 +1,12 @@
+source entropy floor (val): 1.2810 nats | unigram-uniform: 2.0794
+model: 8 MLP sublayers, C=32, n=4 streams, K=4, 400 Adam steps
+
+variant      params   train     val  max|g| g-jitter time(s)
+vanilla       36352  1.3888  1.4257    3.78    0.103     4.4
+mhc           61144  1.3791  1.3944    7.24    0.103    35.6
+identityhc    44624  1.3774  1.3946    7.26    0.104    13.9
+simplehc      44624  1.3723  1.3898    7.25    0.098    13.5
+
+residual-stream overhead (F = identity, B=1024, C=512, n=4, 8 sublayers):
+  identityhc (per-sublayer)     175.3 ms   full-state reads=16 writes= 8
+  simplehc (grouped K=4)        173.7 ms   full-state reads= 4 writes= 2
