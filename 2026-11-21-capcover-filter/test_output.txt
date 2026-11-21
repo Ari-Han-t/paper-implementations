@@ -1,0 +1,5 @@
+test_capcover.py::test_no_false_negatives_across_tau PASSED              [ 25%]
+test_capcover.py::test_indexed_vectors_always_found PASSED               [ 50%]
+test_capcover.py::test_exact_search_matches_bruteforce PASSED            [ 75%]
+test_capcover.py::test_rejects_far_queries_and_is_small PASSED           [100%]
+============================== 4 passed in 0.18s ===============================
