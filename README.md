@@ -10,3 +10,4 @@ Minimal, from-scratch implementations of recent research papers (ML methods, sys
 | 2026-11-14 | FOAM: Factored One-sided Adam-Moment for Practical and Scalable SOAP | [2611.16905](https://arxiv.org/abs/2611.16905) | [2026-11-14-foam-optimizer](2026-11-14-foam-optimizer/) |
 | 2026-11-15 | On the Design of Hyper-Connections: Simplification, Stability, and Scalability (SimpleHC) | [2611.05984](https://arxiv.org/abs/2611.05984) | [2026-11-15-simplehc](2026-11-15-simplehc/) |
 | 2026-11-16 | The Value of Thinking: Learning When to Reason in Hybrid Decision Models | [2611.16961](https://arxiv.org/abs/2611.16961) | [2026-11-16-value-of-thinking](2026-11-16-value-of-thinking/) |
+| 2026-11-17 | Making Preemption Productive in Long-Output LLM Serving | [2611.20106](https://arxiv.org/abs/2611.20106) | [2026-11-17-productive-preemption](2026-11-17-productive-preemption/) |
