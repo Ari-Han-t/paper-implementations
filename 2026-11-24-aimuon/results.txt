@@ -1,0 +1,9 @@
+5 seeds, 600 steps, batch 128, MLP [32, 128, 128, 8]; full-data MSE loss
+target = Muon(Nesterov) median final loss = 0.02144
+
+optimizer                    loss@200  loss@400   loss@600 (mean+-std)  seeds hitting target
+SGD-momentum                  0.10078   0.07593      0.05942 +- 0.00114  0/5
+Muon (Nesterov)               0.05859   0.03106      0.02249 +- 0.00194  3/5
+AIMuon (Nesterov, g=0.25)     0.05168   0.03081      0.02414 +- 0.00145  2/5
+Muon (plain momentum)         0.14837   0.09825      0.07573 +- 0.00721  0/5
+AIMuon (plain, g=0.5)         0.06670   0.03991      0.02838 +- 0.00246  0/5

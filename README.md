@@ -17,3 +17,4 @@ Minimal, from-scratch implementations of recent research papers (ML methods, sys
 | 2026-11-21 | CapCover Filter: Semantic Approximate Membership Queries over Embeddings | [2611.20132](https://arxiv.org/abs/2611.20132) | [2026-11-21-capcover-filter](2026-11-21-capcover-filter/) |
 | 2026-11-22 | A Model of Diverse Sampling from Language Models (PoolDPP) | [2611.25003](https://arxiv.org/abs/2611.25003) | [2026-11-22-pooldpp-diverse-sampling](2026-11-22-pooldpp-diverse-sampling/) |
 | 2026-11-23 | Verify Before You Fetch: Reliable KV Cache Compression for LLM Inference (VerKV) | [2611.11319](https://arxiv.org/abs/2611.11319) | [2026-11-23-verkv-verify-before-fetch](2026-11-23-verkv-verify-before-fetch/) |
+| 2026-11-24 | Accelerating Muon with Spectral Residual Correction (AIMuon) | [2611.27077](https://arxiv.org/abs/2611.27077) | [2026-11-24-aimuon](./2026-11-24-aimuon) |
