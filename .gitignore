@@ -21,3 +21,5 @@ htmlcov/
 *.ckpt
 data/
 .env
+*.so
+.Python
