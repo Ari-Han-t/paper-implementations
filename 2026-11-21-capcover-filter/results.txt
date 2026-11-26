@@ -1,0 +1,21 @@
+
+== max cap radius: unbounded deg | build 1.0s | caps=256 | filter=34 KiB = 0.14% of FP32 index
+  tau  true+  rejected  FN  FP rate  scanned  brute us/q  capcover us/q  speedup
+ 0.80  50.0%      0.0%   0   100.0%   73.04%         971           1535    0.63x
+ 0.90  50.0%      0.0%   0   100.0%   48.07%        1023            989    1.03x
+ 0.95  50.0%      0.0%   0   100.0%   15.95%         984            366    2.69x
+ 0.98  50.0%      0.1%   0    99.8%    2.85%        1002            120    8.37x
+
+== max cap radius: 35 deg | build 3.3s | caps=9015 | filter=1197 KiB = 4.79% of FP32 index
+  tau  true+  rejected  FN  FP rate  scanned  brute us/q  capcover us/q  speedup
+ 0.80  50.0%      0.0%   0   100.0%    0.80%         958            708    1.35x
+ 0.90  50.0%      0.2%   0    99.6%    0.12%         989            508    1.94x
+ 0.95  50.0%     24.3%   0    51.4%    0.05%         954            452    2.11x
+ 0.98  50.0%     47.4%   0     5.2%    0.02%        1003            377    2.66x
+
+== max cap radius: 25 deg | build 3.4s | caps=9385 | filter=1246 KiB = 4.99% of FP32 index
+  tau  true+  rejected  FN  FP rate  scanned  brute us/q  capcover us/q  speedup
+ 0.80  50.0%      0.0%   0   100.0%    0.80%        1002            830    1.21x
+ 0.90  50.0%      0.2%   0    99.6%    0.12%         985            557    1.77x
+ 0.95  50.0%     24.3%   0    51.4%    0.05%         987            474    2.08x
+ 0.98  50.0%     47.4%   0     5.2%    0.02%         991            412    2.40x
