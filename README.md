@@ -18,3 +18,4 @@ Minimal, from-scratch implementations of recent research papers (ML methods, sys
 | 2026-11-22 | A Model of Diverse Sampling from Language Models (PoolDPP) | [2611.25003](https://arxiv.org/abs/2611.25003) | [2026-11-22-pooldpp-diverse-sampling](2026-11-22-pooldpp-diverse-sampling/) |
 | 2026-11-23 | Verify Before You Fetch: Reliable KV Cache Compression for LLM Inference (VerKV) | [2611.11319](https://arxiv.org/abs/2611.11319) | [2026-11-23-verkv-verify-before-fetch](2026-11-23-verkv-verify-before-fetch/) |
 | 2026-11-24 | Accelerating Muon with Spectral Residual Correction (AIMuon) | [2611.27077](https://arxiv.org/abs/2611.27077) | [2026-11-24-aimuon](./2026-11-24-aimuon) |
+| 2026-11-25 | RoCoKV: Accelerating LLM Inference Serving through Uncertainty and Redundancy Aware KV Cache Compression | [2611.25433](https://arxiv.org/abs/2611.25433) | [2026-11-25-rocokv](2026-11-25-rocokv/) |

@@ -1,0 +1,23 @@
+Trace length 800, d=32, 5 seeds averaged
+
+--- average KV budget = 64 (8% of trace) ---
+method                                      KL(full||comp)  top1 agree avg KV held
+H2O (heavy hitters + recent)                        0.7030       0.412        64.0
++ redundancy-aware selection                        0.7248       0.384        64.0
++ uncertainty-adaptive budget (RoCoKV)              0.7911       0.386        64.7
+  (redundancy-only, matched memory)                 0.7020       0.389        65.0
+
+--- average KV budget = 128 (16% of trace) ---
+method                                      KL(full||comp)  top1 agree avg KV held
+H2O (heavy hitters + recent)                        0.3284       0.584       128.0
++ redundancy-aware selection                        0.2993       0.587       128.0
++ uncertainty-adaptive budget (RoCoKV)              0.4374       0.551       111.4
+  (redundancy-only, matched memory)                 0.3397       0.543       111.0
+
+--- average KV budget = 256 (32% of trace) ---
+method                                      KL(full||comp)  top1 agree avg KV held
+H2O (heavy hitters + recent)                        0.1471       0.754       256.0
++ redundancy-aware selection                        0.1117       0.770       256.0
++ uncertainty-adaptive budget (RoCoKV)              0.1833       0.705       190.8
+  (redundancy-only, matched memory)                 0.1723       0.685       191.0
+
