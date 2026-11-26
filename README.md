@@ -12,3 +12,4 @@ Minimal, from-scratch implementations of recent research papers (ML methods, sys
 | 2026-11-16 | The Value of Thinking: Learning When to Reason in Hybrid Decision Models | [2611.16961](https://arxiv.org/abs/2611.16961) | [2026-11-16-value-of-thinking](2026-11-16-value-of-thinking/) |
 | 2026-11-17 | Making Preemption Productive in Long-Output LLM Serving | [2611.20106](https://arxiv.org/abs/2611.20106) | [2026-11-17-productive-preemption](2026-11-17-productive-preemption/) |
 | 2026-11-18 | Weight-Space Programming Doesn't Need Transformers | [2611.22055](https://arxiv.org/abs/2611.22055) | [2026-11-18-weight-space-programming](2026-11-18-weight-space-programming/) |
+| 2026-11-19 | Multi-Branch Transformer | [2611.19800](https://arxiv.org/abs/2611.19800) | [2026-11-19-multi-branch-transformer](2026-11-19-multi-branch-transformer/) |
