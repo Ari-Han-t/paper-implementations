@@ -7,3 +7,4 @@ Minimal, from-scratch implementations of recent research papers (ML methods, sys
 | Date | Paper | arXiv | Folder |
 |---|---|---|---|
 | 2026-11-13 | Precision on Demand: Escalating Weight Bits at Uncertain Decoding Steps in a Small Local Model | [2611.14418](https://arxiv.org/abs/2611.14418) | [2026-11-13-precision-on-demand](2026-11-13-precision-on-demand/) |
+| 2026-11-14 | FOAM: Factored One-sided Adam-Moment for Practical and Scalable SOAP | [2611.16905](https://arxiv.org/abs/2611.16905) | [2026-11-14-foam-optimizer](2026-11-14-foam-optimizer/) |
