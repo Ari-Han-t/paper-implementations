@@ -1,0 +1,24 @@
+error metric: ||o_hat - o_dense|| / rms(||v||)
+
+== cache: 4096 tokens, d=64; 200 queries; resident pivots ~128 (3.1% of cache), delta=0.1 ==
+method                        mean err   p95 err   max err  viol>eps   fetch/q  %cache
+pivots only (no verify)         0.6059    1.1500    1.2122      nan%       0.0   0.00%
+VerKV eps=0.1                   0.0235    0.0658    0.0726     0.00%     506.6  12.37%
+VerKV eps=0.05                  0.0136    0.0401    0.0575     1.50%     891.8  21.77%
+VerKV eps=0.02                  0.0052    0.0135    0.0221     1.00%    1141.1  27.86%
+
+== cache: 4096 tokens, d=64; 200 queries; resident pivots ~256 (6.2% of cache), delta=0.1 ==
+method                        mean err   p95 err   max err  viol>eps   fetch/q  %cache
+pivots only (no verify)         0.5258    1.1110    1.1876      nan%       0.0   0.00%
+VerKV eps=0.1                   0.0241    0.0685    0.1370     2.00%      98.7   2.41%
+VerKV eps=0.05                  0.0097    0.0248    0.0300     0.00%     774.3  18.90%
+VerKV eps=0.02                  0.0037    0.0119    0.0142     0.00%    1017.1  24.83%
+
+== cache: 4096 tokens, d=64; 200 queries; resident pivots ~512 (12.5% of cache), delta=0.1 ==
+method                        mean err   p95 err   max err  viol>eps   fetch/q  %cache
+pivots only (no verify)         0.5166    0.9446    1.0090      nan%       0.0   0.00%
+VerKV eps=0.1                   0.0179    0.0509    0.0545     0.00%       4.7   0.11%
+VerKV eps=0.05                  0.0112    0.0331    0.0450     0.00%     413.9  10.10%
+VerKV eps=0.02                  0.0031    0.0106    0.0158     0.00%     903.8  22.06%
+
+budget 512, eps=0.05: focused queries fetched median 6 rows (0% needed zero fetches); diffuse queries median 1414 rows
